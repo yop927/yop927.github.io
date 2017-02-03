@@ -1,0 +1,60 @@
+<html>
+		<head>	
+			<style type = "text/css">
+		
+				.clockstyle {
+					font-family: "Arial Black", Gadget, sans-serif;
+					color: #0ff;
+					font-size: 16px;
+					font-weight: bold;
+					letter-spacing: 2px;
+					display: inline;
+					padding: 6px;
+					border: #999 2px inset;
+					background-color: #000;
+				}
+				</style>
+		</head>
+
+	<body>
+		<div id = "clockDisplay" class ="clockstyle"> </div>
+		<script type = "text/javascript" language= "javascript">
+
+
+	function hexClock() {
+	var time = new Date();
+	var hours = time.getHours();
+	var min = time.getMinutes();
+	var sec = time.getSeconds();
+	var session = "AM";
+
+	if (hours < 12) {
+		hours = "0" + hours;
+	} else if (hours > 12) {
+		hours = hours - 12;
+		session = "PM";
+	} else if (hours == 0) {
+		hours = 12;
+		session = "AM";
+	}
+
+	if (hours < 10) {
+		hours = "0" + hours;
+	}
+	if (min < 10) {
+		min = "0" + min;
+	}
+	if (sec < 10) {
+		secsec = "0" + sec;
+	}
+
+	var myClock = document.getElementById('ClockDisplay');
+	myClock.textContent = hours + ':' + min + ':' + sec + " " + diem;
+
+	setTimeout('hexClock()', 1000);
+	}
+
+hexClock();
+	</script>
+		</body>
+	</html>
