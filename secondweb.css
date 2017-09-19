@@ -7,58 +7,53 @@ body {
        #sidebar { display: none;}
         }
   
+
+.menu { margin:0; padding:0; }
+.menu li { float:left; background:green; }
+.menu li a { display:block; padding:8px }
+.menu li a:hover { background:#ccc; }
+
+  
 .selected {
 	color:coral;
 	text-decoration: underline;
 }
 
 .hompage {
-	background: url('images/homepage.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/homepage.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .biography {
-	background: url('images/biography.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/biography.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .education {
-	background: url('images/activities.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/activities.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 
 }
 
 .skills{
-	background: url('images/skills.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/skills.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .work {
-	background: url('images/work.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/work.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .links {
-	background: url('images/links.jpeg') no-repeat center center fixed; 
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+	background-image: url('images/links.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header {
@@ -83,7 +78,6 @@ header {
 #midcontent {
 	font-size: 30px;
 	text-align: center;
-	color: orange;
 }
 
 #viewmore {
@@ -121,7 +115,6 @@ header {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 }
 
 #footer li {
